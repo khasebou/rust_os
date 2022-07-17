@@ -5,11 +5,10 @@ edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[profile.dev]
-# panic = "abort"
+[[test]]
+name = "should_panic"
+harness = false
 
-[profile.release]
-# panic = "abort"
 
 [dependencies]
 spin = "0.5.2"
